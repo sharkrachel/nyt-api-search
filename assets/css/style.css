@@ -2,6 +2,8 @@ body {
     width: 100%;
     margin: 0;  
     display: block;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
 }
 .container {
 align-content: center;
@@ -38,7 +40,6 @@ h1 {
 }
 h3 {
    padding-top: 2%; 
-   font-family: Helvetica;
    display: block;
    width: 950px;
 }
@@ -46,10 +47,13 @@ h3 {
     border: solid black 1px;
 }
 
+#articleContainer {
+    margin-left: 15px;
+}
+
 .articleHead {
     font-weight: bold;
-    font-size: 22px;
-    font-family: Helvetica;
+    font-size: 40px;
 }
 
 #submit:hover {
@@ -73,6 +77,41 @@ h3 {
 
 a {
     color: black;
-    
+
 }
+.link-unstyled, .link-unstyled:link, .link-unstyled:hover {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  a:hover {
+      color: #473e3e;
+      text-decoration: none; 
+  }
+  .articleHead {
+    display: inline-block;
+    position: relative;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+.articleHead::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    color: #473e3e;
+    background-color:  #473e3e;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.articleHead:hover::after {
+    transform: scaleX(1);
+    color: #473e3e;
+    transform-origin: bottom left;
+}
+
 
