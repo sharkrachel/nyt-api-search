@@ -23,18 +23,23 @@ $("#submit").on("click", function (event) {
         method: "GET"
     })
         .then(function (response) {
-            console.log(response);
-            console.log(response.response.docs[0].lead_paragraph);
-            for (var i = 0; i < $("#numbRecords").val(); i++) {
-                var a = $("<div>")
-                a.addClass("article");
-                a.append("<a class='articleHead' href='" + response.response.docs[i].web_url +"' target='_blank'>" + response.response.docs[i].headline.main + "</a>");
-                a.append("<p class='articleBody'>" + response.response.docs[i].lead_paragraph + "</p>");
-
-                
-                $("#articleContainer").append(a);
-
-            }
+            if (!$("#numbRecords").val()) {
+                for (var i = 0; i < 10; i++) {
+                    var a = $("<div>")
+                    a.addClass("article");
+                    a.append("<a class='articleHead' href='" + response.response.docs[i].web_url + "' target='_blank'>" + response.response.docs[i].headline.main + "</a>");
+                    a.append("<p class='articleBody'>" + response.response.docs[i].lead_paragraph + "</p>");
+                    $("#articleContainer").append(a);
+                };
+            } else {
+                for (var i = 0; i < $("#numbRecords").val(); i++) {
+                    var a = $("<div>")
+                    a.addClass("article");
+                    a.append("<a class='articleHead' href='" + response.response.docs[i].web_url + "' target='_blank'>" + response.response.docs[i].headline.main + "</a>");
+                    a.append("<p class='articleBody'>" + response.response.docs[i].lead_paragraph + "</p>");
+                    $("#articleContainer").append(a);
+                };
+            };
         });
 
 });
