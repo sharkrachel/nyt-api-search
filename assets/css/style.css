@@ -7,25 +7,34 @@ body {
 align-content: center;
 }
 header {
-    width: 100%;
-    margin: 0;
+    background-image: url("../images/newspaper-banner.jpg");
+    height: 170px;
     padding-top: 3%;
     padding-bottom: 3%;
-    font-family: Gothic;
-    background-image: url('https://images.freecreatives.com/wp-content/uploads/2016/02/Blue-Pattern-Background-For-Free-Download.jpg');
+
 }
 h1 {
     font-weight: bold;
+    background: black;
+    width: 320px;
     color: snow;
+    border-radius: 5px;
     text-align: center;
-    font-size: 30rem;
+    font-size: 38px;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+ 
+
 }
 #formStyling input {
     align-content: center;
     margin-left: 50%;
 }
 #submit {
-    border: solid blue 1px;
+    border: solid black 1px;
 }
 h3 {
    padding-top: 2%; 
@@ -34,7 +43,7 @@ h3 {
    width: 950px;
 }
 #clear {
-    border: solid red 1px;
+    border: solid black 1px;
 }
 
 .articleHead {
@@ -42,3 +51,28 @@ h3 {
     font-size: 22px;
     font-family: Helvetica;
 }
+
+#submit:hover {
+    background: black;
+    color: snow;
+}
+
+#clear:hover {
+    background: black;
+    color: snow;
+}
+
+.wordStyling {
+    font-size: 18px;
+
+}
+
+#endYearPadding {
+    padding-top: 15px;
+}
+
+a {
+    color: black;
+    
+}
+

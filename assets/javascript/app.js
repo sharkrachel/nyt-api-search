@@ -1,6 +1,3 @@
-
-
-
 $("#submit").on("click", function (event) {
 
     var startYear = $("#startYear").val();
