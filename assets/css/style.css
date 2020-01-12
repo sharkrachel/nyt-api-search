@@ -1,0 +1,44 @@
+body {
+    width: 100%;
+    margin: 0;  
+    display: block;
+}
+.container {
+align-content: center;
+}
+header {
+    width: 100%;
+    margin: 0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-family: Gothic;
+    background-image: url('https://images.freecreatives.com/wp-content/uploads/2016/02/Blue-Pattern-Background-For-Free-Download.jpg');
+}
+h1 {
+    font-weight: bold;
+    color: snow;
+    text-align: center;
+    font-size: 30rem;
+}
+#formStyling input {
+    align-content: center;
+    margin-left: 50%;
+}
+#submit {
+    border: solid blue 1px;
+}
+h3 {
+   padding-top: 2%; 
+   font-family: Helvetica;
+   display: block;
+   width: 950px;
+}
+#clear {
+    border: solid red 1px;
+}
+
+.articleHead {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: Helvetica;
+}
